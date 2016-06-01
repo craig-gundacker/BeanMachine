@@ -23,7 +23,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 /*
-Simulates a machine that demonstrates the central limit theorem
+Simulates a machine that demonstrates the central limit theorem changed
 */
 public class BeanMachine extends Application
 {
