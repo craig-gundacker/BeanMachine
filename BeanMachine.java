@@ -23,11 +23,11 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 /*
-Simulates a machine that demonstrates the central limit theorem changed
+Simulates a machine that demonstrates the central limit theorem 
 */
 public class BeanMachine extends Application
 {
-    private final BeanMaker beanMaker;
+    private final BeanMaker beanMaker = new BeanMaker();
     private final SecureRandom random = new SecureRandom();
     private final Pane pane = new Pane();
     private final double SCENE_WIDTH = 500;
@@ -53,17 +53,16 @@ public class BeanMachine extends Application
     private final int[] numBeansInStack = new int[NUM_ROWS + 1];
     private final int MAX_BEANS_IN_STACK = 50;
     
-    private Timeline animMachine;
+    private Timeline animMachine;  //processes individual KeyFrame
 
-    public BeanMachine() 
-    {
-        beanMaker = new BeanMaker();
-        pane.setPadding(new Insets(0, 0, 10, 0));
-    }
-    
     @Override
     public void start(Stage mainStage)      
     {
+        pane.setPadding(new Insets(0, 0, 10, 0));
+        
+        /*
+        Animates the machine by passing a new KeyFram object every 100 milliseconds
+        */
         animMachine = new Timeline(new KeyFrame(Duration.millis(100), e -> beanMaker.drop()));
         animMachine.setCycleCount(Timeline.INDEFINITE); 
 
@@ -113,6 +112,9 @@ public class BeanMachine extends Application
         addPegs();       
     }
     
+    /*
+    Adds bins to container
+    */
     private void addBins()
     {
         int binWidth = PEG_DIM * 2;
@@ -125,6 +127,9 @@ public class BeanMachine extends Application
         }        
     }
     
+    /*
+    Adds pegs to container
+    */
     private void addPegs()
     {
         for (int i = 0; i < NUM_ROWS; i++)
@@ -202,6 +207,9 @@ public class BeanMachine extends Application
             mapBeanAnim.put(bean, animBallDrop);
         }
         
+        /*
+        Logic that moves the bean
+        */
         private void move(Bean bean)
         {
             double centerY = bean.getCenterY();
