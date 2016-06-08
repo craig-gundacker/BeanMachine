@@ -1,3 +1,5 @@
+package machine;
+
 
 import javafx.scene.shape.Circle;
 
