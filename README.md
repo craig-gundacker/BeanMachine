@@ -127,10 +127,6 @@ Once the application is running:
 
 Contributions to improve the simulation or documentation are welcome. Please feel free to submit a pull request or open an issue to discuss potential changes/additions.
 
-## License
-
-[Specify the license under which this project is released, e.g., MIT, GPL, etc.]
-
 ## Contact
 
 If you have any questions or feedback, please open an issue in this repository.
