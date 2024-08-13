@@ -9,6 +9,14 @@
             "name": "BeanMachine",
             "request": "launch",
             "mainClass": "machine.BeanMachine",
+            "projectName": "bean-machine_155b6d52",
+            "vmArgs": "--module-path c:/JavaFx/javafx-sdk-22.0.2/lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "BeanMachine",
+            "request": "launch",
+            "mainClass": "machine.BeanMachine",
             "projectName": "BeanMachine_172284b4",
             "vmArgs": "--module-path c:/JavaFx/javafx-sdk-22.0.2/lib --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web"
         },

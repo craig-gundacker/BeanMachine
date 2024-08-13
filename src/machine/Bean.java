@@ -4,7 +4,7 @@ package machine;
 import javafx.scene.shape.Circle;
 
 /*
-Represents a bean in the machine
+Represents a single bean in the machine
 */
 public class Bean extends Circle
 {
