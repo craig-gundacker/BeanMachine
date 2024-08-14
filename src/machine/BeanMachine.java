@@ -190,7 +190,7 @@ public class BeanMachine extends Application
         private final double BEAN_RADIUS = PEG_DIM / 6;
         private final double START_X = (RIGHT_NECK_X - LEFT_NECK_X) / 2 + LEFT_NECK_X;
         private final double START_Y = TOP_NECK_Y;
-        private final double SHIFT_Y = 4;
+        private final double SHIFT_Y = 2;
         private final double SHIFT_X = PEG_DIM;
         //Holds reference to each bean and animation associated with it
         private final Map<Bean, Timeline> mapBeanAnim = new HashMap<>();
