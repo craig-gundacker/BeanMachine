@@ -207,11 +207,6 @@ public class BeanMachine extends Application
             animBallDrop.play();
             mapBeanAnim.put(bean, animBallDrop);
         }
-
-        public void clear()
-        {
-            mapBeanAnim.clear();
-        }
         
         /*
         Logic that moves the bean
