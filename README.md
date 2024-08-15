@@ -1,4 +1,4 @@
-# Bean Machine Simulation
+# Bean Machine Sim
 
 This project demonstrates the central limit theorem using a Bean Machine simulation, also known as a Galton Board. The simulation is implemented in Java using JavaFX for the graphical interface.
 
