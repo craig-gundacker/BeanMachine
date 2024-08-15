@@ -52,7 +52,7 @@ public class BeanMachine extends Application
     private final double RIGHT_NECK_X = SCENE_WIDTH / 2 + NECK_WIDTH;
 
     private final int[] numBeansInStack = new int[NUM_ROWS + 1];
-    private final int MAX_BEANS_IN_STACK = 50;
+    private final int MAX_BEANS_IN_STACK = 100;
     
     private Timeline animMachine;  //processes individual KeyFrame
 
@@ -165,13 +165,18 @@ public class BeanMachine extends Application
         Button btnClear = new Button("Clear");
         btnClear.setOnAction(e ->
         {
-            animMachine.stop();
+            //animMachine.stop();
             //Clears beans from scene graph
             for (Bean bean: beanArray)
             {
                 pane.getChildren().remove(bean);
             }
             beanArray.clear();
+            int numStacks = numBeansInStack.length;
+            for (int i = 0; i < numStacks; i++)
+            {
+                numBeansInStack[i] = 0;
+            }
         });
                 
         HBox hbButtonPane = new HBox(10);
