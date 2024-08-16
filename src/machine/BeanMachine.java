@@ -52,7 +52,7 @@ public class BeanMachine extends Application
     private final double RIGHT_NECK_X = SCENE_WIDTH / 2 + NECK_WIDTH;
 
     private final int[] numBeansInStack = new int[NUM_ROWS + 1];
-    private final int MAX_BEANS_IN_STACK = 125;
+    private final int MAX_BEANS_IN_STACK = 120;
     
     private Timeline animMachine;  //processes individual KeyFrame
 
